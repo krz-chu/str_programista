@@ -2,8 +2,8 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Technik Programista</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technik Programista</title>
 
     <style>
         body {
@@ -94,6 +94,51 @@
             text-decoration: underline;
         }
 
+        .gorka {
+            background: #020617;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(125, 211, 252, 0.06);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: stretch;
+            margin-top: 20px;
+        }
+
+        .gorka > .czego_sie_nauczysz,
+        .gorka > .dlaczego_my,
+        .gorka > .szkola {
+            background: transparent;
+            border-radius: 12px;
+            padding: 12px 16px;
+        }
+
+        .gorka ul {
+            
+            padding: 20px;
+            margin: 0;
+        }
+
+        .gorka li {
+            margin-bottom: 10px;
+            color: #e5e7eb;
+        }
+
+        .gorka p {
+            margin: 0;
+            color: #e5e7eb;
+        }
+
+        .gorka a {
+            color: #30c1ff;
+            text-decoration: none;
+        }
+
+        .gorka a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             text-align: center;
             padding: 10px;
@@ -101,140 +146,166 @@
             color: #94a3b8;
             font-size: 0.9rem;
         }
+
+        /* responsywność */
+        @media (max-width: 700px) {
+            header h1 {
+            font-size: 2rem;
+            }
+            .gorka {
+            padding: 16px;
+            }
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Technik Programista</h1>
-    <p>
-        Nowoczesny zawód przyszłości, łączący logikę, kreatywność
-        oraz zaawansowane technologie informatyczne.
-    </p>
-</header>
-
-<section>
-    <div class="career">
-        <h2>Kim jest technik programista?</h2>
+    <header>
+        <h1>Technik Programista</h1>
         <p>
-            Technik programista to specjalista zajmujący się tworzeniem, rozwijaniem
-            i testowaniem oprogramowania. Jego praca obejmuje zarówno aplikacje
-            komputerowe, mobilne, jak i strony internetowe oraz systemy bazodanowe.<br>
-            Programista musi umieć logicznie myśleć, analizować problemy oraz
-            pracować zespołowo. To zawód dynamiczny, który stale się rozwija,
-            dając możliwość ciągłego uczenia się i zdobywania nowych umiejętności.
+            Nowoczesny zawód przyszłości, łączący logikę, kreatywność
+            oraz zaawansowane technologie informatyczne.
         </p>
-        </div>
+    </header>
 
-    <div class="cards">
-        <div class="card">
-            <h3>Programowanie</h3>
+    <section>
+        <div class="career">
+            <h2>Kim jest technik programista?</h2>
             <p>
-                Tworzenie kodu w językach takich jak HTML, CSS, JavaScript,
-                Python, Java czy C++.
+                Technik programista to specjalista zajmujący się tworzeniem, rozwijaniem
+                i testowaniem oprogramowania. Jego praca obejmuje zarówno aplikacje
+                komputerowe, mobilne, jak i strony internetowe oraz systemy bazodanowe.<br>
+                Programista musi umieć logicznie myśleć, analizować problemy oraz
+                pracować zespołowo. To zawód dynamiczny, który stale się rozwija,
+                dając możliwość ciągłego uczenia się i zdobywania nowych umiejętności.
             </p>
         </div>
 
-        <div class="card">
-            <h3>Strony i aplikacje WWW</h3>
+        <div class="cards">
+            <div class="card">
+                <h3>Programowanie</h3>
+                <p>
+                    Tworzenie kodu w językach takich jak HTML, CSS, JavaScript,
+                    Python, Java czy C++.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Strony i aplikacje WWW</h3>
+                <p>
+                    Projektowanie nowoczesnych, responsywnych stron
+                    i aplikacji internetowych.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Bazy danych</h3>
+                <p>
+                    Praca z bazami danych (SQL), przechowywanie
+                    i zabezpieczanie informacji.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Testowanie i debugowanie</h3>
+                <p>
+                    Wyszukiwanie błędów w kodzie oraz dbanie
+                    o poprawne działanie aplikacji.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Praca zespołowa</h3>
+                <p>
+                    Współpraca z innymi programistami, grafikami
+                    i analitykami przy wspólnych projektach.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Rozwój i kariera</h3>
+                <p>
+                    Duże zapotrzebowanie na rynku pracy, możliwość
+                    pracy zdalnej i wysokie zarobki.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="gorka">
+            <div class="szkola">
+                <h2>Szkoła</h2>
+                <p>
+                    <h3><a href="https://lukasiewicz.gorlice.pl/" target="_blank">Technikum nr 1 w Gorlicach</a></h3>
+                    ul. Wyszyńskiego 18<br>
+                    38-300 Gorlice
+                </p>
+            </div>
+            <div class="dlaczego_my">
+                <h2>Dlaczego my?</h2>
+                <ul>
+                    <li>Nowoczesne pracownie komputerowe z aktualnym oprogramowaniem</li>
+                    <li>Doświadczeni nauczyciele i praktycy z branży IT</li>
+                    <li>Współpraca z lokalnymi firmami — praktyki i staże dla uczniów</li>
+                    <li>Program nauczania dostosowany do wymagań rynku pracy</li>
+                    <li>Projekty praktyczne, uczestnictwo w konkursach i olimpiadach</li>
+                    <li>Wsparcie w doradztwie zawodowym i przygotowaniu do egzaminów oraz certyfikatów</li>
+                </ul>
+            </div>
+            <div class="czego_sie_nauczysz">
+                <h2>Czego się nauczysz?</h2>
+                <ul>
+                    <li>Języki programowania: Python, C++, JavaScript, Java, SQL</li>
+                    <li>Tworzenie stron i aplikacji: HTML, CSS, React / Vue / podstawy Node.js</li>
+                    <li>Bazy danych: projektowanie i zapytania SQL (MySQL, PostgreSQL), podstawy NoSQL</li>
+                    <li>Systemy kontroli wersji i współpraca: Git, GitHub / GitLab</li>
+                    <li>Testowanie i debugowanie: techniki, narzędzia i pisanie testów</li>
+                    <li>Algorytmy i struktury danych oraz praktyczne rozwiązywanie problemów</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="career">
+            <h2>Ścieżka edukacji i dalsze możliwości</h2>
             <p>
-                Projektowanie nowoczesnych, responsywnych stron
-                i aplikacji internetowych.
+                Zawód technika programisty można zdobyć w technikum,
+                a następnie rozwijać się poprzez studia, kursy
+                oraz samodzielną naukę.
             </p>
+
+            <ul>
+                <li>📘 <a href="https://www.gov.pl/web/edukacja" target="_blank">
+                    Ministerstwo Edukacji – informacje o kształceniu zawodowym
+                </a></li>
+
+                <li>🏫 <a href="https://rekrutacja.edu.pl" target="_blank">
+                    Rekrutacja do szkół ponadpodstawowych
+                </a></li>
+
+                <li>💻 <a href="https://www.men.gov.pl" target="_blank">
+                    Podstawa programowa – technik programista
+                </a></li>
+
+                <li>🎓 <a href="https://www.perspektywy.pl" target="_blank">
+                    Kierunki studiów informatycznych
+                </a></li>
+
+                <li>🌐 <a href="https://www.codecademy.com" target="_blank">
+                    Codecademy – nauka programowania online
+                </a></li>
+
+                <li>📚 <a href="https://www.w3schools.com" target="_blank">
+                    W3Schools – dokumentacja i kursy webowe
+                </a></li>
+            </ul>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Bazy danych</h3>
-            <p>
-                Praca z bazami danych (SQL), przechowywanie
-                i zabezpieczanie informacji.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Testowanie i debugowanie</h3>
-            <p>
-                Wyszukiwanie błędów w kodzie oraz dbanie
-                o poprawne działanie aplikacji.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Praca zespołowa</h3>
-            <p>
-                Współpraca z innymi programistami, grafikami
-                i analitykami przy wspólnych projektach.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Rozwój i kariera</h3>
-            <p>
-                Duże zapotrzebowanie na rynku pracy, możliwość
-                pracy zdalnej i wysokie zarobki.
-            </p>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="gorka">
-        <div class="czego_sie_nauczysz">
-            
-        </div>
-        <div class="dlaczego_my">
-            
-        </div>
-        <div class="szkola">
-            
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="career">
-        <h2>Ścieżka edukacji i dalsze możliwości</h2>
-        <p>
-            Zawód technika programisty można zdobyć w technikum,
-            a następnie rozwijać się poprzez studia, kursy
-            oraz samodzielną naukę.
-        </p>
-
-        <ul>
-            <li>📘 <a href="https://www.gov.pl/web/edukacja" target="_blank">
-                Ministerstwo Edukacji – informacje o kształceniu zawodowym
-            </a></li>
-
-            <li>🏫 <a href="https://rekrutacja.edu.pl" target="_blank">
-                Rekrutacja do szkół ponadpodstawowych
-            </a></li>
-
-            <li>💻 <a href="https://www.men.gov.pl" target="_blank">
-                Podstawa programowa – technik programista
-            </a></li>
-
-            <li>🎓 <a href="https://www.perspektywy.pl" target="_blank">
-                Kierunki studiów informatycznych
-            </a></li>
-
-            <li>🌐 <a href="https://www.codecademy.com" target="_blank">
-                Codecademy – nauka programowania online
-            </a></li>
-
-            <li>📚 <a href="https://www.w3schools.com" target="_blank">
-                W3Schools – dokumentacja i kursy webowe
-            </a></li>
-        </ul>
-    </div>
-</section>
-
-<footer>
-    © 2026 Krzysztof Pelc
-</footer>
-    
-<script>
-    
-</script>
+    <footer>
+        © 2026 Krzysztof Pelc
+    </footer>
 
 </body>
 </html>
-
