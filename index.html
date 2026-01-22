@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Technik Programista</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b, #020617);
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #cbd5f5;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 10px 20px;
+        }
+
+        h2 {
+            color: #7dd3fc;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #020617;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .career {
+            background: #020617;
+            border-radius: 20px;
+            padding: 10px 30px;
+        }
+
+        .career ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .career li {
+            margin-bottom: 12px;
+        }
+
+        .career a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .career a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #020617;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Technik Programista</h1>
+    <p>
+        Nowoczesny zawód przyszłości, łączący logikę, kreatywność
+        oraz zaawansowane technologie informatyczne.
+    </p>
+</header>
+
+<section>
+    <div class="career">
+        <h2>Kim jest technik programista?</h2>
+        <p>
+            Technik programista to specjalista zajmujący się tworzeniem, rozwijaniem
+            i testowaniem oprogramowania. Jego praca obejmuje zarówno aplikacje
+            komputerowe, mobilne, jak i strony internetowe oraz systemy bazodanowe.<br>
+            Programista musi umieć logicznie myśleć, analizować problemy oraz
+            pracować zespołowo. To zawód dynamiczny, który stale się rozwija,
+            dając możliwość ciągłego uczenia się i zdobywania nowych umiejętności.
+        </p>
+        </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Programowanie</h3>
+            <p>
+                Tworzenie kodu w językach takich jak HTML, CSS, JavaScript,
+                Python, Java czy C++.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Strony i aplikacje WWW</h3>
+            <p>
+                Projektowanie nowoczesnych, responsywnych stron
+                i aplikacji internetowych.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Bazy danych</h3>
+            <p>
+                Praca z bazami danych (SQL), przechowywanie
+                i zabezpieczanie informacji.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Testowanie i debugowanie</h3>
+            <p>
+                Wyszukiwanie błędów w kodzie oraz dbanie
+                o poprawne działanie aplikacji.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Praca zespołowa</h3>
+            <p>
+                Współpraca z innymi programistami, grafikami
+                i analitykami przy wspólnych projektach.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Rozwój i kariera</h3>
+            <p>
+                Duże zapotrzebowanie na rynku pracy, możliwość
+                pracy zdalnej i wysokie zarobki.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="career">
+        <h2>Ścieżka edukacji i dalsze możliwości</h2>
+        <p>
+            Zawód technika programisty można zdobyć w technikum,
+            a następnie rozwijać się poprzez studia, kursy
+            oraz samodzielną naukę.
+        </p>
+
+        <ul>
+            <li>📘 <a href="https://www.gov.pl/web/edukacja" target="_blank">
+                Ministerstwo Edukacji – informacje o kształceniu zawodowym
+            </a></li>
+
+            <li>🏫 <a href="https://rekrutacja.edu.pl" target="_blank">
+                Rekrutacja do szkół ponadpodstawowych
+            </a></li>
+
+            <li>💻 <a href="https://www.men.gov.pl" target="_blank">
+                Podstawa programowa – technik programista
+            </a></li>
+
+            <li>🎓 <a href="https://www.perspektywy.pl" target="_blank">
+                Kierunki studiów informatycznych
+            </a></li>
+
+            <li>🌐 <a href="https://www.codecademy.com" target="_blank">
+                Codecademy – nauka programowania online
+            </a></li>
+
+            <li>📚 <a href="https://www.w3schools.com" target="_blank">
+                W3Schools – dokumentacja i kursy webowe
+            </a></li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    © 2026 Krzysztof Pelc
+</footer>
+
+</body>
+</html>
